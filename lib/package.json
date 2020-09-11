@@ -1,0 +1,17 @@
+{
+  "name": "slo-tool-lib",
+  "version": "1.0.0",
+  "description": "some js tool for easyer development",
+  "main": "sloToolLib.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:SlogKi/slo-tool-lib.git"
+  },
+  "keywords": [
+    "slo-tool-lib",
+    "function",
+    "javascript"
+  ],
+  "author": "Slogki",
+  "license": "MIT"
+}
