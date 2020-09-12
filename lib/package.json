@@ -1,6 +1,6 @@
 {
   "name": "slo-tool-lib",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "some js tool for easyer development",
   "main": "sloToolLib.min.js",
   "repository": {
