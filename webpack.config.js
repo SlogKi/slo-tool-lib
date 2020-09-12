@@ -10,6 +10,20 @@ let webpackConf = {
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
+  module: {
+    rules: [
+      {
+        "test": /\.js$/, 
+        use: {
+          loader: "babel-loader", 
+          options: {
+            presets: ["@babel/preset-env"]
+          }
+        }, 
+        exclude: /node_modules/
+      }
+    ] 
+  },
   plugins: [
     new CopyPlugin({
       patterns: [
