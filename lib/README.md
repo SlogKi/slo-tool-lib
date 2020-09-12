@@ -31,5 +31,7 @@ In index.js
     }
   }
 ```
+Note:  
+Involving ES6+
 # Keywords
-javascript tool lib
+javascript tool lib ES6

@@ -12,8 +12,9 @@ Using npm:
 In ./src
 ```
 export function xxx();
-export function xxx();
-export function xxx();
+...
 ```
+Note:  
+ES6+
 # Keywords
-javascript npm development
+javascript npm development ES6
