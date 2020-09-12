@@ -14,7 +14,7 @@ Using npm:
 ```
   num: string input value  
   n: number [default:2] decimal digits  
-  maxLength: number [default:9] allow max input liength  
+  maxLength: number [default:9] allow max input length  
 ```
 # Example
 In index.vue
