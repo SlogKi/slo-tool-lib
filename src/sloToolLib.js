@@ -26,7 +26,7 @@ export class CreateStrategy {
   * @param { string } key
   * @return { boolean } true/false
   */
-  hasStrategy(key) {
+  has(key) {
     return !!this.strategyObj[key];
   }
   /**
@@ -34,7 +34,7 @@ export class CreateStrategy {
   * @param { string } key
   * @return { any } default full obj
   */
-  getStrategy(key) {
+  get(key) {
     return !!key ? this.strategyObj[key] : this.strategyObj;
   }
   /**
@@ -43,7 +43,7 @@ export class CreateStrategy {
   * @param { any } fn default function
   * @return { Object } 
   */
-  addStrategy(key, fn = () => {}) {
+  add(key, fn = () => {}) {
     !!key && !this.strategyObj[key] && (this.strategyObj[key] = fn);
     return this;
   }
@@ -53,7 +53,7 @@ export class CreateStrategy {
   * @param { any } fn default function
   * @return { Object } 
   */
-  modifyStrategy(key, fn = () => {}) {
+  modify(key, fn = () => {}) {
     !!key && !!this.strategyObj[key] && (this.strategyObj[key] = fn);
     return this;
   }
@@ -62,7 +62,7 @@ export class CreateStrategy {
   * @param { string } key
   * @return { Object } 
   */
-  removeStrategy(key) {
+  remove(key) {
     !key && (this.strategyObj = {}); 
     !!key && !!this.strategyObj[key] && delete this.strategyObj[key];
     return this;
@@ -73,7 +73,7 @@ export class CreateStrategy {
   * @return { any } 
   */
   toDo(key, ...param) {
-    return !!key && !!this.strategyObj[key] && this.getStrategy(key)(...param); 
+    return !!key && !!this.strategyObj[key] && this.strategyObj[key](...param); 
   }
 }
 /**
